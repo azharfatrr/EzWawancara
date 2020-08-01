@@ -38,7 +38,7 @@ def buat_pdf(nim_kamu,nama,nim,jurusan,unik,fi):
     pdf.cell(20,10,txt = "First Impression : %s" %fi,ln=2)
     # Prosesnya
     out = str(nim_kamu)+"_"+(str(nim).replace(" ",""))+".pdf"
-    pdf.output(out)
+    pdf.output(out, 'F')
 
 # Membuka data buddies
 data = open("data_budis.txt","r")
