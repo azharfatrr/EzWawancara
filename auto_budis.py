@@ -48,8 +48,8 @@ list_orang = split_list(array_data,"\n","Finish")
 # Memulai mengisi pdf
 sum = 0
 i = 0
+error = False
 for orang in list_orang:
-    sum += 1
     fi_orang = random.sample(list_fi, k=2)
     fi = str(fi_orang[0].replace("\n","")) +", "+ str(fi_orang[1].replace("\n",""))
     for id in orang:
@@ -65,11 +65,18 @@ for orang in list_orang:
             unik = b[1].replace("\n","").lstrip(' ')
         else:
             print("Error: format data di file data_budis.txt tidak terbaca di line "+str(i))
-            sum = sum - 1
-            break  
-    buat_pdf(nim_kamu,nama,nim,jurusan,unik,fi)
+            error = True
+            break
+    if error:
+        break
+    else:
+        buat_pdf(nim_kamu,nama,nim,jurusan,unik,fi)
+        sum += 1
 
-print("...\nProgram Finish, "+str(sum)+" people has been made")
+if not(error):
+    print("...\nProgram Finish, "+str(sum)+" people has been made.")
+else:
+    print("...\nProgram Finish, "+str(sum)+" people has been made.\nThere is an error occure!")
 input()
 
 
