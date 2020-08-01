@@ -30,7 +30,7 @@ Finish
 * Pastikan data terakhir adalah Finish
 * First Impression akan dibuat otomatis, data Fi diambil dari fi.txt
 
-### Note : Format Data Pool <fi.txt>
+### Note : Format Data Pool First Impression <fi.txt>
 ```
 Baik
 Ramah
