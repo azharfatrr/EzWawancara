@@ -31,9 +31,9 @@ def buat_pdf(nim_kamu,nama,nim,jurusan,unik,fi):
     pdf.cell(200,20,txt = "Wawancara Budies", align='C', ln=1)
     pdf.set_font("times",size=12)
     pdf.cell(0,0,txt = "", align='C',ln=2)
-    pdf.cell(20,10,txt = "Nama      : %s" %nama,ln=2)
-    pdf.cell(20,10,txt = "NIM       : %s" %nim,ln=2)
-    pdf.cell(20,10,txt = "Jurusan   : %s" %jurusan,ln=2)
+    pdf.cell(20,10,txt = "Nama       : %s" %nama,ln=2)
+    pdf.cell(20,10,txt = "NIM        : %s" %nim,ln=2)
+    pdf.cell(20,10,txt = "Jurusan    : %s" %jurusan,ln=2)
     pdf.cell(20,10,txt = "Keunikan : %s" %unik,ln=2)
     pdf.cell(20,10,txt = "First Impression : %s" %fi,ln=2)
     # Prosesnya
@@ -56,13 +56,13 @@ for orang in list_orang:
         i += 1
         b = id.split(":",2)
         if "nama" in b[0].lower():
-            nama = b[1].replace("\n","").lstrip(' ')
+            nama = b[1].replace("\n","").lstrip(' ').title()
         elif "nim" in b[0].lower():
             nim = b[1].replace("\n","").lstrip(' ')
         elif "jurusan" in b[0].lower():
             jurusan = b[1].replace("\n","").lstrip(' ')
         elif ("keunikan" or "unik") in b[0].lower():
-            unik = b[1].replace("\n","").lstrip(' ')
+            unik = b[1].replace("\n","").lstrip(' ').capitalize()
         else:
             print("Error: format data di file data_budis.txt tidak terbaca di line "+str(i))
             error = True
