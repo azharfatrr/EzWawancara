@@ -46,12 +46,14 @@ array_data = data.readlines()
 list_orang = split_list(array_data,"\n","Finish")
 
 # Memulai mengisi pdf
+sum = 0
 i = 0
 for orang in list_orang:
-    i += 1
+    sum += 1
     fi_orang = random.sample(list_fi, k=2)
     fi = str(fi_orang[0].replace("\n","")) +", "+ str(fi_orang[1].replace("\n",""))
     for id in orang:
+        i += 1
         b = id.split(":",2)
         if "nama" in b[0].lower():
             nama = b[1].replace("\n","").lstrip(' ')
@@ -61,9 +63,14 @@ for orang in list_orang:
             jurusan = b[1].replace("\n","").lstrip(' ')
         elif ("keunikan" or "unik") in b[0].lower():
             unik = b[1].replace("\n","").lstrip(' ')
+        else:
+            print("Error: format data di file data_budis.txt tidak terbaca di line "+str(i))
+            sum = sum - 1
+            break  
     buat_pdf(nim_kamu,nama,nim,jurusan,unik,fi)
 
-print("...\nProgram Finish, "+str(i)+" people has been made")
+print("...\nProgram Finish, "+str(sum)+" people has been made")
+input()
 
 
 
