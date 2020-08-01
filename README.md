@@ -28,7 +28,7 @@ Finish
 * Tiap orang dipisahkan dengan enter
 * Urutan Nama, NIM, dsb. Tidak usah dipedulikan, tapi harus ada
 * Pastikan data terakhir adalah Finish
-* First Impression akan dibuat otomatis, data Fi diambil dari fi.txt
+* First Impression akan dibuat otomatis, data diambil dari fi.txt
 
 ### Note : Format Data Pool First Impression <fi.txt>
 ```
