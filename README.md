@@ -25,4 +25,5 @@ Keunikan : Mandi pake air
 Finish
 ```
 * Tiap orang dipisahkan dengan enter
+* Urutan Nama, NIM, dsb. Tidak usah dipedulikan, tapi harus ada
 * Pastikan data terakhir adalah Finish
