@@ -8,9 +8,10 @@ Buat mempermudah dokumentasi wawancara kalian
 1. Install module fpdf
 2. Download semua file
 3. Masukkan data budis ke file data_budis.txt
+4. Masukkan first impresion sebagai data pool ke fi.txt
 4. Jalankan program auto_budis.py
 
-### Note : Format Data Budis
+### Note : Format Data Budis data_budis.txt
 ```
 Nama 	: Muhammad Azhar Faturahman
 NIM 	: 16519261
@@ -28,3 +29,10 @@ Finish
 * Urutan Nama, NIM, dsb. Tidak usah dipedulikan, tapi harus ada
 * Pastikan data terakhir adalah Finish
 * First Impression akan dibuat otomatis, jika ingin mengubah data pool bisa di dalam file auto_budis.py
+
+### Note : Format Data Pool fi.txt
+```
+Baik
+Ramah
+<dsb>
+```
