@@ -1,9 +1,4 @@
-Baik
-Ramah
-Pendiem
-Aktif
-Asik
-Rame
-Pinter
-Imba
-Keunikannya keren
+Sifat 1
+Sifat 2
+Sifat 3
+dsb
