@@ -1,5 +1,5 @@
 # EzWawancara
-By Alfan
+By Alfan,
 Modified By Azhar
 
 Buat mempermudah dokumentasi wawancara kalian
