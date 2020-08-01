@@ -26,7 +26,7 @@ Keunikan : Mandi pake air
 Finish
 ```
 * Tiap orang dipisahkan dengan enter
-* Urutan Nama, NIM, dsb. Tidak usah dipedulikan, tapi harus ada
+* Harus ada keterangan Nama :, NIM :, dsb. Urutan tidak dipedulikan
 * Pastikan data terakhir adalah Finish
 * First Impression akan dibuat otomatis, data diambil dari fi.txt
 
