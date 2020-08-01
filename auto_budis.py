@@ -76,7 +76,7 @@ for orang in list_orang:
 if not(error):
     print("...\nProgram Finish, "+str(sum)+" people has been made.")
 else:
-    print("...\nProgram Finish, "+str(sum)+" people has been made.\nThere is an error occure!")
+    print("...\nProgram Finish, "+str(sum)+" people has been made.\nThere is an error occur!")
 input()
 
 
