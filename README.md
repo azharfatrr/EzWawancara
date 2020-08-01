@@ -27,3 +27,4 @@ Finish
 * Tiap orang dipisahkan dengan enter
 * Urutan Nama, NIM, dsb. Tidak usah dipedulikan, tapi harus ada
 * Pastikan data terakhir adalah Finish
+* First Impression akan dibuat otomatis, jika ingin mengubah data pool bisa di dalam file auto_budis.py
